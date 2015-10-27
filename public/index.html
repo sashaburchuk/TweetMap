@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="/FMEServer.js"></script>
+    <script>
+        $(function () {
+            var socket = io.connect(); 
+
+            $(document).ready(function() {
+                var keyword = 'is'
+                socket.emit("tracking", keyword);
+                console.log("tracking keyword ", keyword);
+            });
+
+            socket.on('stream', function(tweet){
+                $("#data").hide();
+                $("#data").html("<h1>" + tweet.text + "</h1>");
+                $("#data").fadeIn();
+            });
+        });
+     </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>A Tweet:</h1>
+      <div id="data"></div>
+    </div>
+
+    <div id="map"></div>
+    <script src="/maps.js" type="text/javascript"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKagO2t-cASQluAKWLGS4gfAgFh8tGZjE&callback=initMap" type="text/javascript"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKagO2t-cASQluAKWLGS4gfAgFh8tGZjE&callback=initMap&libraries=visualization&sensor=true_or_false"></script>
+  </body>
+</html>
+
+<!-- Google API Key
+AIzaSyDKagO2t-cASQluAKWLGS4gfAgFh8tGZjE -->

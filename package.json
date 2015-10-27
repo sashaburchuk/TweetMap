@@ -1,0 +1,14 @@
+{
+    "name":"tracking-tweets",
+    "description":"Tracking tweets with sockets!",
+    "version":"0.0.1",
+    "scripts": {
+        "start" : "node server.js"
+    },
+    "dependencies": {
+        "express":"4.x.x",
+        "twit":"*",
+        "socket.io":"*",
+        "twitter": "*"
+    }
+}

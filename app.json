@@ -1,0 +1,6 @@
+{
+  "name": "tracking-tweets",
+  "description": "Tracking tweets with sockets!",
+  "repository": "https://github.com/joshterrill/tracking-tweets",
+  "keywords": ["twitter", "streams"]
+}
