@@ -1,6 +1,6 @@
 {
   "name": "tracking-tweets",
-  "description": "Tracking tweets with sockets!",
-  "repository": "https://github.com/joshterrill/tracking-tweets",
-  "keywords": ["twitter", "streams"]
+  "description": "Tracking tweets with sockets and adding them to a Google map",
+  "repository": "https://github.com/sashaburchuk/tweet-map",
+  "keywords": ["twitter", "streams", "Google", "maps", "geocoordinates", "tweet", "geolocate"]
 }
