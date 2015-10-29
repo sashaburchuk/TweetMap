@@ -33,6 +33,8 @@ Assuming you have Node installed, after cloning this project, cd in to the root 
 
 ##Honorable mentions
 I hardscrabbled this project together based on these two sources:
+
 https://blog.safe.com/2014/03/twitter-stream-api-map/
+
 https://github.com/joshterrill/tracking-tweets
 
